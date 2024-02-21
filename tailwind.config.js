@@ -2,7 +2,23 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    fontFamily: {
+      display: ["Popping", "sans-serif"],
+    },
+
+    extend: {
+      // Color used in the Project
+
+      colors: {
+        primary: "#3368C0",
+        secondary: "#EEF4FF",
+        background: "#F7FAFF",
+        darkBlue: "#1B4282",
+        lightBlue: "#BDD6FF",
+        dimBlue: "#F7FAFF",
+        overlayBg: "rgba(0,0,0,0.3)",
+      },
+    },
   },
   plugins: [],
 };

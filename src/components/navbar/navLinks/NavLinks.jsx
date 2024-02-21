@@ -1,21 +1,23 @@
-import { HiPhoneArrowUpRight } from "react-icons/hi2";
-
 const navItem = [
   {
     id: 1,
-    title: "Properties",
-    path: "/properties",
+    title: "Home",
+    path: "/home",
   },
   {
     id: 2,
-    title: "Contact",
-    path: "/contact",
+    title: "Services",
+    path: "/services",
   },
   {
     id: 3,
-    title: "(800) 555 555",
-    path: "tel: (800) 555 555",
-    icon: <HiPhoneArrowUpRight />,
+    title: "Our Work",
+    path: "/ourWork",
+  },
+  {
+    id: 3,
+    title: "Testimonial",
+    path: "/testimonial",
   },
 ];
 

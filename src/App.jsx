@@ -1,5 +1,5 @@
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
-import Navbar from "./components/navbar/Navbar";
+import Navbar from "./components/navbar/navDesktop/NavbarDesktop";
 import Footer from "./components/footer/Footer";
 import Home from "./components/home/Home";
 
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-background">
       <RouterProvider router={router} />
     </div>
   );
