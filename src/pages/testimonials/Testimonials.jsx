@@ -4,6 +4,7 @@ import TestimonialsCard from "./testimonailsCrad/TestimonialsCard";
 import Slider from "react-slick";
 
 import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri";
+import Pagination from "../pagination/Pagination";
 
 const Testimonials = () => {
   const sliderRef = useRef();
@@ -74,6 +75,8 @@ const Testimonials = () => {
           <RiArrowRightLine size={24} />
         </button>
       </div>
+
+      <Pagination active={currentSlide} />
     </section>
   );
 };
