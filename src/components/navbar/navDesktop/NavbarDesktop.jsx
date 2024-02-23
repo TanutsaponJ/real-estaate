@@ -7,7 +7,7 @@ import { useState } from "react";
 import NavbarMobile from "../navMobile/NavbarMobile";
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
