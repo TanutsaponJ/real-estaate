@@ -1,22 +1,22 @@
-import Icon1 from "../assets/icon1.svg";
-import Icon2 from "../assets/icon2.svg";
-import Icon3 from "../assets/icon3.svg";
-import Icon4 from "../assets/icon4.svg";
+import Icon1 from "../../assets/icon1.svg";
+import Icon2 from "../../assets/icon2.svg";
+import Icon3 from "../../assets/icon3.svg";
+import Icon4 from "../../assets/icon4.svg";
 
-import ServiceImg1 from "../assets/service-img1.png";
-import ServiceImg2 from "../assets/service-img2.png";
-import ServiceImg3 from "../assets/service-img3.png";
+import ServiceImg1 from "../../assets/service-img1.png";
+import ServiceImg2 from "../../assets/service-img2.png";
+import ServiceImg3 from "../../assets/service-img3.png";
 
-import GalleryImg1 from "../assets/gallery-img1.jpeg";
-import GalleryImg2 from "../assets/gallery-img2.jpeg";
-import GalleryImg3 from "../assets/gallery-img3.jpeg";
-import GalleryImg4 from "../assets/gallery-img4.jpeg";
-import GalleryImg5 from "../assets/gallery-img5.jpeg";
-import GalleryImg6 from "../assets/gallery-img6.jpeg";
+import GalleryImg1 from "../../assets/gallery-img1.jpeg";
+import GalleryImg2 from "../../assets/gallery-img2.jpeg";
+import GalleryImg3 from "../../assets/gallery-img3.jpeg";
+import GalleryImg4 from "../../assets/gallery-img4.jpeg";
+import GalleryImg5 from "../../assets/gallery-img5.jpeg";
+import GalleryImg6 from "../../assets/gallery-img6.jpeg";
 
-import ProfileImg1 from "../assets/profile-img1.png";
-import ProfileImg2 from "../assets/profile-img2.png";
-import ProfileImg3 from "../assets/profile-img3.png";
+import ProfileImg1 from "../../assets/profile-img1.png";
+import ProfileImg2 from "../../assets/profile-img2.png";
+import ProfileImg3 from "../../assets/profile-img3.png";
 
 export const STATS_DATA = [
   { iconUrl: Icon1, count: "1M+", label: "Sqft Area Constructed" },
