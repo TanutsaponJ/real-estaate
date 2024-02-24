@@ -43,7 +43,7 @@ const Testimonials = () => {
     sliderRef.current.slickPrev();
   };
   return (
-    <section className="max-w-[1200px] py-16 mx-auto">
+    <section id="testimonial" className="max-w-[1200px] py-16 mx-auto">
       <h5 className="text-2xl font-semibold text-darkBlue text-center mb-16">
         Testimonials
       </h5>

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import logo from "../../../assets/logo.png";
 
 import { RiMenu4Line, RiCloseFill } from "react-icons/ri";
@@ -20,7 +20,16 @@ const Navbar = () => {
             <ul className="hidden md:flex md:gap-14">
               {navItem.map((nav) => (
                 <li key={nav.id}>
-                  <Link className="menu-item">{nav.title}</Link>
+                  <ScrollLink
+                    to={nav.to}
+                    spy={true}
+                    smooth={true}
+                    offset={-80}
+                    duration={500}
+                    className="menu-item"
+                  >
+                    {nav.title}
+                  </ScrollLink>
                 </li>
               ))}
             </ul>

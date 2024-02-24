@@ -7,7 +7,7 @@ import GalleryImg6 from "../../assets/gallery-img6.jpeg";
 
 const OurWork = () => {
   return (
-    <section className="max-w-[1200px] pt-8 mx-auto">
+    <section id="ourWork" className="max-w-[1200px] pt-8 mx-auto">
       <h5 className="text-2xl font-semibold text-darkBlue text-center mb-16">
         Our Work
       </h5>
