@@ -2,7 +2,12 @@ import { Link } from "react-router-dom";
 import logo from "../../../assets/logo.png";
 import navItem from "../navLinks/NavLinks";
 
-const NavbarMobile = ({ setIsMenuOpen }) => {
+const NavbarMobile = ({ isMenuOpen, setIsMenuOpen }) => {
+  const handleScroll = (sectionId) => {
+    if (isMenuOpen) setIsMenuOpen(false);
+    document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="w-screen fixed top-0 z-20">
       <div className="w-1/2 h-screen flex flex-col p-8 bg-background">
@@ -11,7 +16,12 @@ const NavbarMobile = ({ setIsMenuOpen }) => {
         <ul>
           {navItem.map((nav) => (
             <li key={nav.id} className="mb-5">
-              <Link className="menu-item">{nav.title}</Link>
+              <Link
+                onClick={() => handleScroll(`${nav.to}`)}
+                className="menu-item"
+              >
+                {nav.title}
+              </Link>
             </li>
           ))}
         </ul>

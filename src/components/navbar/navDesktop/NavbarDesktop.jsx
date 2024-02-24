@@ -11,7 +11,9 @@ const Navbar = () => {
 
   return (
     <>
-      {isMenuOpen && <NavbarMobile setIsMenuOpen={setIsMenuOpen} />}
+      {isMenuOpen && (
+        <NavbarMobile isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      )}
       <div className="bg-background sticky top-0 z-10">
         <nav className="max-w-screen-xl mx-auto py-4 px-6">
           <div className="flex items-center justify-between">
@@ -22,10 +24,10 @@ const Navbar = () => {
                 <li key={nav.id}>
                   <ScrollLink
                     to={nav.to}
-                    spy={true}
                     smooth={true}
+                    spy={true}
                     offset={-80}
-                    duration={500}
+                    duration={700}
                     className="menu-item"
                   >
                     {nav.title}
