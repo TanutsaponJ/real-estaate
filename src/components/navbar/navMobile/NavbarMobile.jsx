@@ -16,7 +16,14 @@ const NavbarMobile = ({ setOpenMenu }) => {
           ))}
         </ul>
 
-        <button className="h-10 text-white bg-primary">Contact Us</button>
+        <button className="h-10 text-sm px-6 rounded hover:bg-blue-200 hover:text-primary md:block text-white bg-primary">
+          Contact Us
+        </button>
+
+        <div
+          onClick={() => setOpenMenu(false)}
+          className="h-screen w-screen bg-overlayBg fixed top-0 -z-10"
+        />
       </div>
     </div>
   );

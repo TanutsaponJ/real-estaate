@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../../../assets/logo.png";
 
-import { RiMenu4Line } from "react-icons/ri";
+import { RiMenu4Line, RiCloseFill } from "react-icons/ri";
 import navItem from "../navLinks/NavLinks";
 import { useState } from "react";
 import NavbarMobile from "../navMobile/NavbarMobile";
@@ -33,8 +33,11 @@ const Navbar = () => {
               Contact Us
             </button>
 
-            <button className="w-11 h-11 bg-blue-100 text-2xl text-primary flex items-center justify-center rounded md:hidden z-50">
-              <RiMenu4Line />
+            <button
+              onClick={() => setOpenMenu(true)}
+              className="w-11 h-11 bg-blue-100 text-2xl text-primary flex items-center justify-center rounded md:hidden z-50"
+            >
+              {openMenu ? <RiCloseFill /> : <RiMenu4Line />}
             </button>
           </div>
         </nav>
